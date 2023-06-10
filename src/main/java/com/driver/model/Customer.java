@@ -17,7 +17,7 @@ public class Customer {
     private String mobileNo;
 
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
-    private List<TripBooking> tripBookingList = new ArrayList<>();
+    public List<TripBooking> tripBookingList = new ArrayList<>();
 
     public Customer() {
     }

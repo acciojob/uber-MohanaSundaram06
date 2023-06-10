@@ -23,11 +23,11 @@ public class TripBooking {
 
     @ManyToOne
     @JoinColumn
-    private Driver driver;
+    public Driver driver;
 
     @ManyToOne
     @JoinColumn
-    private Customer customer;
+    public Customer customer;
 
     public TripBooking() {
     }

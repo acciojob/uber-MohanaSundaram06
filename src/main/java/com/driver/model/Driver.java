@@ -16,10 +16,10 @@ public class Driver {
     private String mobileNo;
 
     @OneToOne(mappedBy = "driver",cascade = CascadeType.ALL)
-    private Cab cab;
+    public Cab cab;
 
     @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
-    private List<TripBooking> tripBookingList = new ArrayList<>();
+    public List<TripBooking> tripBookingList = new ArrayList<>();
 
     public Driver() {
     }

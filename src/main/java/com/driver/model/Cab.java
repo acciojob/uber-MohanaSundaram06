@@ -16,7 +16,7 @@ public class Cab {
 
     @JoinColumn
     @OneToOne
-    private Driver driver;
+    public Driver driver;
 
     public Cab() {
     }
