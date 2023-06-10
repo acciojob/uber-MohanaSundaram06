@@ -22,6 +22,12 @@ public class Customer {
     public Customer() {
     }
 
+    public Customer(String password, String mobileNo, List<TripBooking> tripBookingList) {
+        this.password = password;
+        this.mobileNo = mobileNo;
+        this.tripBookingList = tripBookingList;
+    }
+
     public int getCustomerId() {
         return customerId;
     }

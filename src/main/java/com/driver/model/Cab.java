@@ -21,6 +21,12 @@ public class Cab {
     public Cab() {
     }
 
+    public Cab(int perKmRate, boolean availabe, Driver driver) {
+        this.perKmRate = perKmRate;
+        this.availabe = availabe;
+        this.driver = driver;
+    }
+
     public int getCabId() {
         return cabId;
     }
