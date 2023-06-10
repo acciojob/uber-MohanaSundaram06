@@ -13,7 +13,7 @@ public class Driver {
 
     private String password;
 
-    private String mobileNo;
+    private String mobile;
 
     @OneToOne(mappedBy = "driver",cascade = CascadeType.ALL)
     public Cab cab;
@@ -26,7 +26,7 @@ public class Driver {
 
     public Driver(String password, String mobileNo, Cab cab, List<TripBooking> tripBookingList) {
         this.password = password;
-        this.mobileNo = mobileNo;
+        this.mobile = mobileNo;
         this.cab = cab;
         this.tripBookingList = tripBookingList;
     }
@@ -47,12 +47,12 @@ public class Driver {
         this.password = password;
     }
 
-    public String getMobileNo() {
-        return mobileNo;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setMobileNo(String mobileNo) {
-        this.mobileNo = mobileNo;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
     public Cab getCab() {
